@@ -1,0 +1,40 @@
+.xx-field {
+  padding: 0 20rpx;
+  display: flex;
+  margin-bottom: 40rpx;
+}
+
+.xx-field__label {
+  white-space: nowrap;
+  margin-right: 16rpx;
+  font-size: 28rpx;
+  color: #666;
+  line-height: 80rpx;
+}
+
+.xx-field-content {
+  flex: 1;
+}
+
+.xx-field__input {
+  background-color: #f7f7f7;
+  border-radius: 16rpx;
+  outline: none;
+  height: 80rpx;
+  color: #333;
+  font-size: 28rpx;
+  padding-left: 20rpx;
+  border: 1px solid #f7f7f7;
+  transition: border-color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.xx-field__input--error {
+  border-color: #e06b6b;
+}
+
+.xx-field__error {
+  color: #e06b6b;
+  font-size: 24rpx;
+  line-height: 30rpx;
+  margin-top: 8rpx;
+}

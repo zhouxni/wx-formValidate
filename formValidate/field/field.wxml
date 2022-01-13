@@ -1,0 +1,9 @@
+<view class="xx-field">
+  <view class="xx-field__label">{{label}}</view>
+  <view class="xx-field-content">
+    <input wx:if="{{!custom}}" class="xx-field__input {{errMsg?'xx-field__input--error':''}}" value="{{value}}"
+      placeholder="{{placeholder}}" placeholder-style="{{placeholderStyle}}" bind:input="change" bind:blur="blur" />
+    <slot wx:else></slot>
+    <view class="xx-field__error" wx:if="{{errMsg}}">{{errMsg}}</view>
+  </view>
+</view>
